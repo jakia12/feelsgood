@@ -1,0 +1,294 @@
+.white {
+    color: #74C152;
+}
+:root {
+    --lightblk: #252930;
+    --blk: #111417;
+  }
+  
+  .header {
+    font-size: 57px;
+    color: white;
+    font-family: Rubik Mono One;
+    flex-basis: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background: #0267ff;
+  }
+  
+  .footer {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2em;
+    gap: 10px;
+    display: flex;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    background-color: var(#0267ff);
+  }
+  
+  div.right {
+    margin: 0;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    gap: 10px;
+    flex: 1;
+  }
+  
+  div.left {
+    flex-basis: 100%;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  textarea {
+    font-family: Azeret Mono;
+    box-sizing: border-box;
+    color: whitesmoke;
+    outline: none;
+    resize: none;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--lightblk);
+  }
+  
+  .msg {
+    flex-basis: 100%;
+  }
+  
+  div.bottom {
+    min-width: 0;
+    overflow-x: scroll;
+    padding: 1em;
+    gap: 2em;
+    color: grey;
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+  }
+  
+  .ftrtxt {
+    flex-basis: 100%;
+    font-size: 15px;
+    text-align: center;
+    font-family: Rubik Mono One;
+    color: rgb(2, 2, 2);
+  }
+  
+  .ftrhead {
+    font-size: 35px;
+  }
+  
+  .ftrhead::after,
+  .ftrtxt::after {
+    content: "\a";
+    white-space: pre;
+  }
+  
+  .ftrlinks {
+    flex-basis: 1;
+  }
+  
+  hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex-basis: 100%;
+    color: white;
+  }
+  
+  svg {
+    fill: white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  svg:hover {
+    transform: scale(1.1);
+    fill: grey;
+  }
+  
+  ::placeholder {
+    font-family: Azeret Mono;
+  }
+  
+  #start {
+    margin-left: auto;
+  }
+  
+  #end {
+    margin-right: auto;
+  }
+  
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+    height: 5px;
+    width: 2px;
+  }
+  
+  #submitbtn {
+    display: none;
+    border-radius: 10px;
+    border: none;
+    font-family: Rubik Mono One;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+  #submitbtn:hover {
+    background-color: var(--lightblk);
+    color: white;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      height: 0%;
+      border-radius: 10px;
+    }
+    100% {
+      opacity: 1;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  @import url('../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.html');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 1.5rem;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: aliceblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.fas {
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.list-nav-bar {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+}
+
+.list-item a {
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-left: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.list-item a:hover {
+    color: #a0a0a0;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.main-content h1 {
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .list-item a {
+        font-size: 0.875rem;
+    }
+
+    .logo {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 578px) {
+
+    .list-item a {
+        font-size: 1rem;
+
+    }
+
+    .list-nav-bar.active {
+        right: 0;
+    }
+
+    .list-nav-bar {
+        display: flex;
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        width: 35%;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        flex-direction: column;
+        transition: 0.7s;
+        gap: 18px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+}
